@@ -14,25 +14,26 @@ class TestPrimeNumbers(unittest.TestCase):
 		self.assertEqual(printPrimeNumbers(10), [2,3,5,7])
 
 	def test_string_inputs(self):
-		#self.assertEqual(printPrimeNumbers('one'), None)
-		with self.assertRaises(Exception):
-			 printPrimeNumbers('hello')
+		self.assertEqual(printPrimeNumbers('one'), 'Invalid input')
+		#with self.assertRaises(ValueError):
+		#	 printPrimeNumbers('one')
 
-    def test_negative_inputs(self):
-		with 
-		self.assertRaises(Exception):
-			 printPrimeNumbers(-10)
+	def test_negative_inputs(self):
+		self.assertEqual(printPrimeNumbers(-10), 'Invalid input')
+		#with self.assertRaises(ValueError):
+		#	 printPrimeNumbers(-10)
 
-    def test_null_inputs(self):
-		with 
-		self.assertRaises(TypeError):
+	def test_null_inputs(self):
+		#self.assertEqual(printPrimeNumbers(), None)
+		with self.assertRaises(TypeError):
 			 printPrimeNumbers()
 
 	def test_float_inputs(self):
-		with 
-		self.assertRaises(TypeError):
-			 printPrimeNumbers(10.2)
-
+		self.assertEqual(printPrimeNumbers(10.2), 'Invalid input')
+		#with self.assertRaises(ValueError):
+		#	 printPrimeNumbers(10.2)
+#if __name__=='__main__':
+#	unittest.main()
  
 
 		
