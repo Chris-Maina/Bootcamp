@@ -6,13 +6,13 @@ def printPrimeNumbers(number):
      """
      listPrime=[]
      if isinstance(number,basestring):
-           raise Exception
+           return "Invalid input"
      if isinstance(number,float):
-           raise Exception
+           return "Invalid input"
      if number is None:
-           raise Exception
+           return "Invalid input"
      if number < 0:
-           raise Exception
+          return "Invalid input"
      for prime in range (0,number+1):
           if prime > 1:
                for num in range(2,prime):
@@ -26,7 +26,7 @@ def printPrimeNumbers(number):
      
      
      
-#print(printPrimeNumbers(10))
+#print(printPrimeNumbers('one'))
 #print(printPrimeNumbers(-10))
          
     
