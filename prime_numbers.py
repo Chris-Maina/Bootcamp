@@ -7,8 +7,6 @@ def printPrimeNumbers(number):
      listPrime=[]
      if isinstance(number,basestring):
            raise Exception
-     if isinstance(number,integer):
-           raise Exception
      if isinstance(number,float):
            raise Exception
      for prime in range (0,number+1):
@@ -24,8 +22,7 @@ def printPrimeNumbers(number):
      
      
      
-
-#print(printPrimeNumbers(10))
+print(printPrimeNumbers(10))
          
      
 
