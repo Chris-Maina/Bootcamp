@@ -5,8 +5,8 @@ from prime_numbers import printPrimeNumbers
 class TestPrimeNumbers(unittest.TestCase):
 	"""
 	Test if number is prime
-	Test for input 0 -> not prime
-	Test for input 1
+	Test for float inputs
+	Test for null inputs
 	Test for negatives
 	Test for string input
 	"""
@@ -17,16 +17,20 @@ class TestPrimeNumbers(unittest.TestCase):
 		#self.assertEqual(printPrimeNumbers('one'), None)
 		with self.assertRaises(Exception):
 			 printPrimeNumbers('hello')
+
     def test_negative_inputs(self):
-		with self.assertRaises(ValueError):
+		with 
+		self.assertRaises(Exception):
 			 printPrimeNumbers(-10)
 
     def test_null_inputs(self):
-		with self.assertRaises(ValueError):
+		with 
+		self.assertRaises(TypeError):
 			 printPrimeNumbers()
 
 	def test_float_inputs(self):
-		with self.assertRaises(TypeError):
+		with 
+		self.assertRaises(TypeError):
 			 printPrimeNumbers(10.2)
 
  
