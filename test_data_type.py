@@ -13,3 +13,6 @@ class DataTypeTestCase(unittest.TestCase):
   #test for less than hundred data supplied
   def test_small_integer_type(self):
     self.assertEqual('less than 100',data_type(3))
+  #test for more than hundred data supplied
+  def test_large_integer_type(self):
+    self.assertEqual('more than 100',data_type(200))
