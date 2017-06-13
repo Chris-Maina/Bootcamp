@@ -16,3 +16,6 @@ class DataTypeTestCase(unittest.TestCase):
   #test for more than hundred data supplied
   def test_large_integer_type(self):
     self.assertEqual('more than 100',data_type(200))
+  #test for 3rd item in list
+  def test_array_type(self):
+    self.assertEqual(3,data_type([1,2,3]))
