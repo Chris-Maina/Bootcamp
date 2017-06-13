@@ -1,5 +1,5 @@
-class Car():
-	def __init__(self,name = 'General',model= 'GM',car_type= 'honda',speed = 0):
+class Car(object):
+	def __init__(self, name = 'General', model= 'GM',car_type= None, speed = 0):
 		self.name = name
 		self.model = model
 		self.car_type = car_type
@@ -27,9 +27,7 @@ class Car():
 			self.speed = 1000
 		elif moving_speed == 7:
 			self.speed = 77
-
-		
- return self
+		return self
  
 
 	
@@ -38,6 +36,3 @@ class Car():
 		
 	
  
-
-#gm = Car()
-#gm.default_car_name
