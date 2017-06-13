@@ -9,4 +9,7 @@ class FizzBuzzClassTest(unittest.TestCase):
 	def test_buzz_1(self):
 		self.assertEqual(fizz_buzz(5),'Buzz',msg='should return `Buzz` for number divisible by 5')
 		self.assertEqual(fizz_buzz(55),'Buzz',msg='should return `Buzz` for number divisible by 5')
+	def test_fizz_buzz(self):
+		self.assertEqual(fizz_buzz(15),'FizzBuzz',msg='should return `FizzBuzz` for number divisible by 3 and 5')
+		self.assertEqual(fizz_buzz(105),'FizzBuzz',msg='should return `FizzBuzz` for number divisible by 3 and 5')
 		
