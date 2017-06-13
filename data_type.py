@@ -34,4 +34,4 @@ def data_type(data):
 #print(data_type(None))
 #print(data_type(True))
 #print(data_type(4034))
-print(data_type([1,2]))
+#print(data_type([1,2]))
