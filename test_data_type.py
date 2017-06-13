@@ -19,3 +19,6 @@ class DataTypeTestCase(unittest.TestCase):
   #test for 3rd item in list
   def test_array_type(self):
     self.assertEqual(3,data_type([1,2,3]))
+  #test for None in list
+  def test_small_array_type(self):
+    self.assertEqual(None,data_type([1,2]))
