@@ -15,11 +15,17 @@ def data_type(data):
 	#check for integer argument
 	if isinstance(data,int):
 		if data < 100 :
-			return "Less than 100"
+			return "less than 100"
 		if data == 100:
-			return "Equal to 100"
+			return "equal to 100"
 		else:
-			return "More than 100"
+			return "more than 100"
+	if isinstance(data,list):
+		if len(data)<3:
+			return None
+		else:
+			#return data[2]
+			return data.pop(2)
 		
 
 
@@ -27,4 +33,5 @@ def data_type(data):
 #print(data_type('andela'))
 #print(data_type(None))
 #print(data_type(True))
-print(data_type(4034))
+#print(data_type(4034))
+print(data_type([1,2]))
